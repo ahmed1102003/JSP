@@ -60,14 +60,16 @@ public class Beckend extends HttpServlet {
 			
 				ArrayList<String> match = b.search(foodtype,location);
 				
-				request.setAttribute("Rest", match);
+				//request.setAttribute("Rest", match);
 					
+				
+				response.getWriter().write(match.toString());
+				
 				getServletContext().getRequestDispatcher("/Home.jsp")
 				 .forward(request, response);
 				
 				//response.getWriter().write("This is from Servlet to JSP page");
-				
-				//response.getWriter().write(match.toString());
+							
 			
 			}
 		

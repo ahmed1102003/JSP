@@ -43,7 +43,7 @@ public class Bean {
          Statement stmt = con.createStatement();
          
          // Execute SQL query 
-         String sql = "SELECT location, foodtype, images FROM html.new_table Where foodtype = '" + foodtype + "' and location = '" + location+"'";
+         String sql = "SELECT location, foodtype, images FROM JSP.jsp Where foodtype = '" + foodtype + "' and location = '" + location+"'";
         
          ArrayList<String> ar = new ArrayList<String>();
          
